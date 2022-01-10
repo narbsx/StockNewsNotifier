@@ -17,11 +17,8 @@ TWILIO_AUTH_TOKEN = os.environ.get("auth_token")
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-THEME_COLOR = "#202020"
-window = Tk()
-window.title("Stock News Notifier")
-window.config(padx=20, pady=20, bg=THEME_COLOR)
-window.mainloop()
+
+
 
 alpha_params ={
     "function": "TIME_SERIES_DAILY",
